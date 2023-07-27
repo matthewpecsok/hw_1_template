@@ -15,4 +15,4 @@ class  LoginPageView(View):
     def post(self, request):
         return redirect('home-page')
     def get(self, request):
-        return render(request, 'mysite/login_form.html', {'login_form': LoginForm()})
+        return render(request, 'mysite/login_page.html', {'login_form': LoginForm()})
